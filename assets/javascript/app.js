@@ -203,7 +203,7 @@ function resetTime() {
  */
 function setQuestions(_question, _answers) {
     $("#imgResult").attr("src", '')
-    $(".pScore, #btnReset, #messageResult").hide();
+    $(".pScore, #btnReset, #messageResult, #imgResult").hide();
 
     //Add question
     $("#question").text(_question);
@@ -259,7 +259,7 @@ $(document).on('click', '.answerLink', function () {
     $("#imgResult").attr("src", $(this).attr("data-image"))
 
     //show result message
-    $("#messageResult").show();
+    $("#messageResult, #imgResult").show();
     // start();
 
     // resetTime();
@@ -279,7 +279,7 @@ function clearQuestion() {
 
 function finalResult() {
     $("#imgResult").attr("src", '')
-    $("#messageResult").hide();
+    $("#messageResult, #imgResult").hide();
     clearQuestion();
     stopTime();
     $(".pScore, #btnReset").show();
