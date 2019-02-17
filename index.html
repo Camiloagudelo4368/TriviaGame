@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div class="header text-center">
+            <header>
+                <h1>Totally Trivial Trivia!!</h1>
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Time Remaining: <span id="timeRemaining"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 id="messageResult"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="imgContainer" class="col-12 text-center">
+                    <img id="imgResult" src="" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 id="question"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="answers" class="col-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="pScore"> Correct answers: <span class="spanScore" id="correctScore"></span></p>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="pScore"> Incorrect answers: <span class="spanScore" id="incorrectScore"></span></p>
+                    <a name="" id="btnReset" class="btn btn-primary" href="#" role="button">Reset</a>
+                </div>
+                <!-- <button type="button" name="" id="btnReset" class=" btnclick btn btn-primary text-center btn-xs ">Reset</button> -->
+
+            </div>
+            <div class="row">
+                <div class="col-12 text-center footer">
+                    <footer>Copyright© Camilo Agudelo </footer>
+                </div>
+            </div>
+        </div>
+        <script src="assets/javascript/app.js"></script>
+    </div>
+</body>
+
+</html>
