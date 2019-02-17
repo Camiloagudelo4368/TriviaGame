@@ -120,7 +120,7 @@ var _answersList = [
 var _correctCounter = 0;
 var _incorrectCounter = 0;
 
-var _waitingTime = 50;
+var _waitingTime = 10;
 var _timeRemaining = 0;
 var _questionNumber = 0;
 var _questionNumberArray = [];
