@@ -174,6 +174,7 @@ function timeUp() {
     $("#messageResult").show()
     $("#messageResult").text("TIME IS UP... The correct answer was !!! " + _messageText.toUpperCase() + " !!!")
     _incorrectCounter++;
+    $("#imgResult").show();
     $("#imgResult").attr("src", _timeUpUrl)
     stopTime();
     _timeRemaining = _waitingTime;
